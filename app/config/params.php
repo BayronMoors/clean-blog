@@ -14,7 +14,10 @@ define("DB_PASSWORD", "root");
 // UTILITIES
 $root = explode('index.php', $_SERVER['PHP_SELF']);
 define('ROOT', 'http://'.$_SERVER['HTTP_HOST'].$root[0]);
+
+define('FORMAT_DATE', "F d, Y");
 // VARIABLE INIT
 $content = "";
 $title ="";
+$script ="";
 

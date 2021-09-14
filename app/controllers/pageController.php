@@ -24,3 +24,4 @@
         include "../app/views/pages/show.php";
     $content = ob_get_clean();
  }
+ 

@@ -39,3 +39,8 @@
   }
 
 })(jQuery); // End of use strict
+
+
+function test(err) {
+  console.log(err);
+}

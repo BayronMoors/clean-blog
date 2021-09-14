@@ -18,10 +18,17 @@ RewriteEngine on
 # URL: index.php
 #RewriteRule ^(.*)$ index.php [L]
 
+# ROUTE D'UN POST
+# PATTERN: /post/id
+# URL: index.php?postID=$1
+RewriteRule ^post\/([1-9][0-9]*)$ index.php?postID=$1 [L]
+
 # ROUTE D'UNE PAGE
 # PATTERN: /page/id
 # URL: index.php?pageID=$1
 RewriteRule ^page\/([1-9][0-9]*)$ index.php?pageID=$1 [L]
+
+
 
 
 
