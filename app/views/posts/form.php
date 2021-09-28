@@ -23,7 +23,7 @@
 <div class="container">
     <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
-            <form name="sentMessage" id="contactForm" action="<?php echo (strlen( $post['id']) > 1) ? "post/updated/".$post['id'] : "post/added"; ?>" method="Post" novalidate>
+            <form name="sentMessage" id="contactForm" action="<?php echo (strlen( $post['id']) > 1) ? "post/updated/".$post['id'] : "post/added"; ?>" method="Post">
                 <div class="control-group">
                     <div class="form-group floating-label-form-group controls">
                         <label>titre</label>
@@ -48,7 +48,7 @@
                 <br>
                 <div id="success"></div>
                 <div class="form-group">
-                    <button type="submit" class="btn btn-secondary" id="sendMessageButton">Ajouter</button>
+                    <button type="submit" class="btn btn-secondary" id="sendMessageButton"><?php echo (strlen( $post['id']) > 1) ? "Editer" : "Ajouter"; ?></button>
                 </div>
             </form>
         </div>

@@ -105,7 +105,13 @@ function deleteOneById(\PDO $conn, int $id){
   return $rs->execute();
 }
 
-
+/**
+ * updateById function
+ *
+ * @param \PDO $conn
+ * @param array $data
+ * @return void
+ */
 function updatedById(\PDO $conn, array $data){
   $sql = "UPDATE posts
           SET `titre` = :title, `sousTitre` = :subTitle, `texte` = :content

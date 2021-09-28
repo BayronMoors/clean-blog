@@ -31,12 +31,12 @@ RewriteRule ^page\/([1-9][0-9]*)$ index.php?pageID=$1 [L]
 # ROUTE DU FORM ADD
 # PATTERN: /post/new
 # URL: index.php?add=form
-RewriteRule ^post\/new$ index.php?add=form [L]
+RewriteRule ^post\/new$ index.php?post=form [L]
 
 # ROUTE DU FORM ADD
 # PATTERN: /post/new
 # URL: index.php?add=form
-RewriteRule ^post\/added$ index.php?add=post [L]
+RewriteRule ^post\/added$ index.php?post=add [L]
 
 # ROUTE DU DELETE D'UN POST
 # PATTERN: /post/delete/X
