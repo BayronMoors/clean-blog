@@ -28,7 +28,31 @@ RewriteRule ^post\/([1-9][0-9]*)$ index.php?postID=$1 [L]
 # URL: index.php?pageID=$1
 RewriteRule ^page\/([1-9][0-9]*)$ index.php?pageID=$1 [L]
 
+# ROUTE DU FORM ADD
+# PATTERN: /post/new
+# URL: index.php?add=form
+RewriteRule ^post\/new$ index.php?add=form [L]
 
+# ROUTE DU FORM ADD
+# PATTERN: /post/new
+# URL: index.php?add=form
+RewriteRule ^post\/added$ index.php?add=post [L]
+
+# ROUTE DU DELETE D'UN POST
+# PATTERN: /post/delete/X
+# URL: index.php?post=delete&deleteID=$1
+RewriteRule ^post\/delete\/([1-9][0-9]*)$ index.php?post=delete&deleteID=$1 [L]
+
+
+# ROUTE DU FORM UPDATE
+# PATTERN: /post/update/XX
+# URL: index.php?post=update&updateID=$1
+RewriteRule ^post\/update\/([1-9][0-9]*)$ index.php?post=update&updateID=$1[L]
+
+# ROUTE DU POST UPDATED
+# PATTERN: /post/updated/XX
+# URL: index.php?post=update&updateID=$1
+RewriteRule ^post\/updated\/([1-9][0-9]*)$ index.php?post=updated&updatedID=$1[L]
 
 
 

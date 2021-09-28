@@ -38,7 +38,6 @@
                     include "../app/views/template/partials/_contact-form.php";
                     break;
             }
-
             ?>
 
         </div>

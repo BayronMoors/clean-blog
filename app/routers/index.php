@@ -7,6 +7,7 @@
    use App\Controllers\PageController;
    use App\Controllers\PostController;
 
+
    if(isset($_GET['pageID'])){
       include_once "../app/controllers/pageController.php";
       PageController\showAction($conn, $_GET['pageID']);
@@ -18,6 +19,16 @@
    else if(isset($_GET['more'])){
       include_once "../app/controllers/postController.php";
       PostController\ajaxAction($conn, $_GET['more']);
+   }
+   else if(isset($_GET['update'])){
+      include_once "../app/controllers/postController.php";
+      PostController\ajaxUpdateAction($conn, $_GET['id'], $_GET['field'], $_GET['value']);
+   }
+   else if(isset($_GET['add'])){
+      include_once "../app/routers/add.php";
+   }
+   else if(isset($_GET['post'])){
+      include_once "../app/routers/post.php";
    }
    else{
       include_once "../app/controllers/pageController.php";
